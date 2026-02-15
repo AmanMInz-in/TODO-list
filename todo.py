@@ -10,8 +10,8 @@ while True:
         task=input("enter your task")
         Todo_list.append(task)
     elif i==2:
-        for choice in Todo_list:
-            print(choice)
+        for index, choice in enumerate(Todo_list, start=1):
+            print(f"{index}: {choice}")
     elif i==3:
         task=input("enter task you want to remove")
         Todo_list.remove(task)
