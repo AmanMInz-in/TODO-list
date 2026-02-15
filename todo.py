@@ -10,6 +10,7 @@ while True:
         task=input("enter your task")
         Todo_list.append(task)
     elif i==2:
+        print("\n1 your task are\n")
         for index, choice in enumerate(Todo_list, start=1):
             print(f"{index}: {choice}")
     elif i==3:
